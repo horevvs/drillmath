@@ -3,7 +3,7 @@
 function App2() {
   return (
     <>
-     app2
+     app2ds
    
     </>
   );

@@ -12,7 +12,7 @@ function Profiles() {
             <li class="nav-item m-1"> <NavLink to={'/Blog'}> Глушение </NavLink> </li>
             <li class="nav-item m-1"> <NavLink to={'/Chats'}> Цементаж </NavLink> </li>
             <li class="nav-item m-1"> <NavLink to={'/Profiles'}> Буровые растворы </NavLink> </li>
-            <li class="nav-item m-1"> <NavLink to={'/Metric'}> Перевод величин </NavLink> </li>
+            <li class="nav-item m-2"> <NavLink to={'/Metric'}> Перевод величин </NavLink> </li>
           </ul>
         </div>
       </div>
