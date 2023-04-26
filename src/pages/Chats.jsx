@@ -4,6 +4,10 @@ import { NavLink } from 'react-router-dom';
 
 
 function Chats() {
+  const divStyle = {
+    height: '100vh'
+  }
+
 
   return (
     <>
@@ -29,7 +33,9 @@ function Chats() {
         </div>
       </nav>
 
-      <div>2</div>
+      <div style={divStyle} class="text-bg-light mx-5 bg-opacity-25 ">
+        2
+      </div>
 
     </>
   )

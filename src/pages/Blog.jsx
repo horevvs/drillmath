@@ -3,6 +3,10 @@ import { NavLink } from 'react-router-dom';
 
 
 function Blog() {
+  const divStyle = {
+    height: '100vh'
+  }
+
   return (
     <>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -27,7 +31,9 @@ function Blog() {
         </div>
       </nav>
 
-      <div>1</div>
+      <div style={divStyle} class="text-bg-light mx-5 bg-opacity-25 ">
+        4s
+      </div>
     </>
   )
 

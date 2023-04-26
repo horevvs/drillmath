@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import App2 from './App2';
+
 import { BrowserRouter } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.css';
 
@@ -13,7 +13,7 @@ root.render(
 
     <BrowserRouter>
         <App />
-        <App2 />
+      
     </BrowserRouter>
 );
 

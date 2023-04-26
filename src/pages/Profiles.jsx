@@ -2,6 +2,10 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 
 function Profiles() {
+  const divStyle = {
+    height: '100vh'
+  }
+
   return (
     <>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -34,8 +38,9 @@ function Profiles() {
           </div>
         </div>
       </nav>
-
-      <div>3</div>
+      <div style={divStyle} class="text-bg-light mx-5 bg-opacity-25 ">
+        4dds
+      </div>
     </>
   )
 }

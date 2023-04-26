@@ -10,19 +10,40 @@
   <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
   <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
   <title>Drillmath</title>
-
   <style>
-.ff{
-  background-color: aquamarine;
-}
-
-
-
+    .mouse-parallax-bg {
+      position: absolute;
+      background-image: url("fon.jpg");
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 105%;
+      height: 105%;
+      transition: all 0.1s ease;
+      z-index: -100;
+      margin-top: 50px;
+    }
   </style>
 </head>
 
-<body class="ff">
-  <div id="root" ></div>
+<body >
+<div class="mouse-parallax-bg">
+
+
+</div>
+
+  <div id="root"></div>
+
+
 </body>
+<script>
+
+let bg = document.querySelector('.mouse-parallax-bg');
+window.addEventListener('mousemove', function(e) {
+    let x = e.clientX / window.innerWidth;
+    let y = e.clientY / window.innerHeight;  
+    bg.style.transform = 'translate(-' + x * 10 + 'px, -' + y * 10 + 'px)';
+});
+</script>
 
 </html>
