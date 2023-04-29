@@ -1,6 +1,12 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import './App2.css'
+import Popup from 'reactjs-popup';
+
+
+
+
+
 
 
 function Profiles() {
@@ -68,8 +74,6 @@ function Profiles() {
             <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Введите значение" />
           </div>
         </form>
-
-
 
       </div>
     </>
