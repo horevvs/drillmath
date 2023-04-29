@@ -1,0 +1,11 @@
+.size {
+    height: 100vh
+}
+
+
+.legendposition {
+    position:absolute;
+    left: 100px;
+    top: 200px;
+
+}
