@@ -28,28 +28,20 @@ function Profiles() {
     alert(result2.toFixed(4) + 'Мпа');
   }
 
-  // const getValues3 = () => {
-  //   const result3 = inputs5 / 0.09806;
-  //   alert(result3.toFixed(4) + ' кгс/см²');
-  // }
-
 
   const getValues3 = () => { 
     const result3 = inputs5.replace(/\,/g, '.') / 0.09806;
     alert(result3.toFixed(4) + ' кгс/см²');
   }
 
+const divStyle = { 
 
-
-
-
-const divStyle = {
-  height: '100vh'
+  height: '2050px'
 };
 
 return (
   <>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top ">
       <div class="container ">
         <a class="navbar-brand" href="#!">Инженерные расчеты</a>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -89,7 +81,7 @@ return (
 
 
 
-    <div style={divStyle} class="bg-info mx-5 bg-opacity-25 ">
+    <div style={divStyle} class="bg-info mx-5 bg-opacity-25   ">
 
       <p class="mx-5 py-3 fs-5"> 1. Расчет  гидростатического давления на забое</p>
       <div class="form-group mx-5 pt-2 w-25">
@@ -133,6 +125,45 @@ return (
           </Button>
         </div>
       </div>
+
+      <p class="mx-5 py-3 fs-5"> 1. Расчет  объёма скважины</p>
+
+      <div class="form-group mx-5  pt-2 w-25 ">
+        <label for="formGroupExampleInput2 pt-5" >Значение в (Мпа) </label>
+        <input type="text" class="form-control " id="formGroupExampleInput2" placeholder="Введите значение" value={inputs5} onChange={(e) => setInputs5(e.target.value)} />
+        <div class=' py-4'>
+          <Button onClick={() => getValues3()} variant="primary" size="sm" active>
+            Выполнить перевод в  кгс/см²
+          </Button>
+        </div>
+      </div>
+      <div class="form-group mx-5  pt-2 w-25 ">
+        <label for="formGroupExampleInput2 pt-5" >Значение в (Мпа) </label>
+        <input type="text" class="form-control " id="formGroupExampleInput2" placeholder="Введите значение" value={inputs5} onChange={(e) => setInputs5(e.target.value)} />
+        <div class=' py-4'>
+          <Button onClick={() => getValues3()} variant="primary" size="sm" active>
+            Выполнить перевод в  кгс/см²
+          </Button>
+        </div>
+      </div>
+      <div class="form-group mx-5  pt-2 w-25 ">
+        <label for="formGroupExampleInput2 pt-5" >Значение в (Мпа) </label>
+        <input type="text" class="form-control " id="formGroupExampleInput2" placeholder="Введите значение" value={inputs5} onChange={(e) => setInputs5(e.target.value)} />
+        <div class=' py-4'>
+          <Button onClick={() => getValues3()} variant="primary" size="sm" active>
+            Выполнить перевод в  кгс/см²
+          </Button>
+        </div>
+      </div>
+
+      
+
+
+      
+
+      
+
+      
 
     </div>
   </>
