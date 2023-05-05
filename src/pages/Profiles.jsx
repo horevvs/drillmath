@@ -42,9 +42,9 @@ function Profiles() {
     const result5 = value2.replace(/\,/g, '.');
     const result6 = value3.replace(/\,/g, '.');
 
-     
-    let totalresult =(((Math.pow(((result4 - ((result5 * 2)).toFixed(2))/1000), 2)*0.785*1000).toFixed(2))*result6).toFixed(2)
-    alert('объем скважины составляет ' + totalresult + ' л' + ' или '+ totalresult/1000 +' м3' );
+
+    let totalresult = (((Math.pow(((result4 - ((result5 * 2)).toFixed(1)) / 1000), 2) * 0.785 * 1000).toFixed(1)) * result6).toFixed(1)
+    alert('объем скважины составляет ' + totalresult + ' л' + ' или ' + totalresult / 1000 + ' м3');
 
   }
 
@@ -149,11 +149,16 @@ function Profiles() {
             <option selected>Диаметр эксплуатационной колонны, мм</option>
             <option value="114">114</option>
             <option value="127">127</option>
+            <option value="140">140</option>
+            <option value="146">146</option>
             <option value="168.3">168.3</option>
+            <option value="178">178</option>
+            <option value="194">194</option>
+            <option value="219">219</option>
             <option value="244.5">244.5</option>
             <option value="324">324</option>
           </select>
-         
+
 
           <select class="form-select w-25 mx-5" aria-label="Default select example" value={value2} onChange={(e) => setValue2(e.target.value)}>
             <option selected>Толщина стенки, мм </option>
@@ -161,17 +166,26 @@ function Profiles() {
             <option value="5.7">5,7</option>
             <option value="6.4">6.4</option>
             <option value="7.4">7.4</option>
+            <option value="8.6">8.6</option>
             <option value="8.94">8.94</option>
+            <option value="9.2">9.2</option>
+            <option value="9.5">9.5</option>
+            <option value="10.2">10.2</option>
+            <option value="10.5">10.5</option>
+            <option value="10.6">10.6</option>
+            <option value="10.6">10.6</option>
+            <option value="11.5">10.5</option>
+            <option value="12.7">12.7</option>
           </select>
 
           <input type="text" class="form-control my-3  w-25 mx-5" id="formGroupExampleInput2" placeholder="Укажите глубину скважины, м" value={value3} onChange={(e) => setValue3(e.target.value)} />
 
-         
+
         </div>
 
 
         <div class='  px-5 py-4'>
-          <Button class=" mx-5 w-25 mx-5" onClick={() => wellVolume()} variant="primary" size="sm"  active>
+          <Button class=" mx-5 w-25 mx-5" onClick={() => wellVolume()} variant="primary" size="sm" active>
             Показать объем скважины в м<sup>3</sup>
           </Button>
         </div>
